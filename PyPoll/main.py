@@ -5,6 +5,8 @@ import os
 import csv
 csvpath = '/Users/xilo/Desktop/Bootcamp/Homework/Python_Challange/python_challange/PyPoll/Resources/election_data.csv'
 output_file = '/Users/xilo/Desktop/Bootcamp/Homework/Python_Challange/python_challange/PyPoll/Analysis'
+files_output = '/Users/xilo/Desktop/Bootcamp/Homework/Python_Challange/python_challange/PyPoll/election_data.txt' 
+
 
 #creating the variables
 total_votes = 0
@@ -58,3 +60,7 @@ print(output)
 
 with open(output_file, 'w') as outputfile:
     outputfile.write(output)
+
+    #Export to text file
+with open(files_output, 'w') as txt_file:
+    txt_file.write(output)
